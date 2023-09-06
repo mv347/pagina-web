@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Touch Slider Using Html CSS & Swiper.js</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Recetas de Comidas</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Galeria</a></li>
+
+            </ul>
+        </nav>
+      </header>
+     <div class="swiper-container">
+          <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                   <div class="imgBx">
+                       <img src="https://www.elmueble.com/medio/2022/05/31/alcachofas-al-horno-con-pico-de-gallo_00000000_230213080755_779x1039.jpg" alt="">
+                   </div>
+                   <div class="details">
+                       <h3>BERENJENAS RELLENAS <br> <span>Sencilla en casa </span></h3>
+                   </div>
+               </div>
+               <div class="swiper-slide">
+                   <div class="imgBx">
+                       <img src="https://www.elmueble.com/medio/2022/05/31/arroz-basmati-salteado-con-heura-y-verduras-variadas-al-curry_e06f5c80_766x516.jpg" alt="">
+                   </div>
+                   <div class="details">
+                       <h3>ALCACHOFAS AL HORNO CON PICO DE GALLO<br> <span>siempre son un acierto</span></h3>
+                   </div>
+               </div>
+               <div class="swiper-slide">
+                   <div class="imgBx">
+                       <img src="https://www.elmueble.com/medio/2022/05/31/merluza-al-vapor-a-la-gallega_92646229_1299x1738.jpg" alt="">
+                   </div>
+                   <div class="details">
+                       <h3>TATAKI DE ATÚN<br> <span>un plato delicioso</span></h3>
+                   </div>
+               </div>
+               <div class="swiper-slide">
+                   <div class="imgBx">
+                       <img src="https://www.elmueble.com/medio/2021/01/25/tosta-de-salmon-y-aguacate-00526813_bfced374_900x1181.jpg" alt="">
+                   </div>
+                   <div class="details">
+                       <h3>BACALAO CON HABAS Y ESPÁRRAGOS<br> <span>dieta equilibrada</span></h3>
+                   </div>
+               </div>
+               <div class="swiper-slide">
+                   <div class="imgBx">
+                       <img src="https://www.elmueble.com/medio/2021/01/25/tartan-de-salmon-00504403_3b66aa58_900x1159.jpg" alt="">
+                   </div>
+                   <div class="details">
+                       <h3>TOSTA DE SALMÓN CON GUACAMOLE<br> <span>de los pescados más saludables</span></h3>
+                   </div>
+               </div>
+               <div class="swiper-slide">
+                   <div class="imgBx">
+                       <img src="https://www.elmueble.com/medio/2021/01/25/salteado-de-verduras-00502558_c5f842fc_900x1287.jpg" alt="">
+                   </div>
+                   <div class="details">
+                       <h3>TARTAR DE SALMÓN<br> <span>no puede faltar</span></h3>
+                   </div>
+               </div>
+               <div class="swiper-slide">
+                   <div class="imgBx">
+                       <img src="https://www.elmueble.com/medio/2021/01/25/ramen-vegano-00515855_8c6f51e9_900x1092.jpg" alt="">
+                   </div>
+                   <div class="details">
+                       <h3>MINITORTITAS DE GUISANTES<br> <span>saludables.</span></h3>
+                   </div>
+               </div>
+          </div>
+    <div class="swiper-pagination"></div>
+  </div>
+   
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+</body>
+</html>
